@@ -7,15 +7,28 @@
   <maintainer email="christian.ege@ifm.com">Christian Ege</maintainer>
   <license>Apache</license>
 
-  <url>https://github.com/lovepark/ifm3d</url>
+  <url type="website">https://github.com/lovepark/ifm3d</url>
+  <url type="repository">https://github.com/lovepark/ifm3d</url>
+  <url type="bugtracker">https://github.com/lovepark/ifm3d/issues</url>
+
   <author email="tom.panzarella@ifm.com">Tom Panzarella</author>
 
+  <!-- Dependencies which this package needs to build itself. -->
   <buildtool_depend>cmake</buildtool_depend>
 
   <build_depend>boost</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>curl</build_depend>
+  <build_depend>libgoogle-glog-dev</build_depend>
+  <!-- <build_depend>xmlrpc-c++</build_depend> -->
+  <build_depend>libopencv-dev</build_depend>
 
-  <exec_depend>boost</exec_depend>
-  <exec_depend>catkin</exec_depend>
+  <!-- Dependencies needed after this package is compiled. -->
+  <exec_depend>pcl_ros</exec_depend>
+  <exec_depend>curl</exec_depend>
+  <exec_depend>libgoogle-glog-dev</exec_depend>
+  <exec_depend>libopencv-dev</exec_depend>
+
   <doc_depend>doxygen</doc_depend>
 
   <export>
