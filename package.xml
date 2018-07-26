@@ -1,0 +1,24 @@
+<package format="2">
+  <name>ifm3d-core</name>
+  <version>0.9.2</version>
+  <description>
+ Library and Utilities for working with ifm pmd-based 3D ToF Cameras 
+  </description>
+  <maintainer email="christian.ege@ifm.com">Christian Ege</maintainer>
+  <license>Apache</license>
+
+  <url>https://github.com/lovepark/ifm3d</url>
+  <author email="tom.panzarella@ifm.com">Tom Panzarella</author>
+
+  <buildtool_depend>cmake</buildtool_depend>
+
+  <build_depend>boost</build_depend>
+
+  <exec_depend>boost</exec_depend>
+  <exec_depend>catkin</exec_depend>
+  <doc_depend>doxygen</doc_depend>
+
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+</package>
