@@ -17,8 +17,8 @@ tracks:
     patches: kinetic
     release_inc: -1
     release_repo_url: null
-    release_tag: :{version}
+    release_tag: v0.9.2
     ros_distro: kinetic
     vcs_type: git
-    vcs_uri: https://github.com/graugans/ifm3d
-    version: ask
+    vcs_uri: https://github.com/lovepark/ifm3d
+    version: 0.9.2
