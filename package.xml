@@ -27,6 +27,7 @@
   <exec_depend>pcl_ros</exec_depend>
   <exec_depend>curl</exec_depend>
   <exec_depend>libgoogle-glog-dev</exec_depend>
+  <exec_depend>libxmlrpc-c++</exec_depend>
   <exec_depend>libopencv-dev</exec_depend>
 
   <doc_depend>doxygen</doc_depend>
