@@ -1,0 +1,12 @@
+Source: ros-kinetic-ifm3d-core
+Section: misc
+Priority: extra
+Maintainer: Christian Ege <christian.ege@ifm.com>
+Build-Depends: debhelper (>= 9.0.0), cmake, libboost-all-dev
+Homepage: https://github.com/lovepark/ifm3d
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-ifm3d-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libboost-all-dev, ros-kinetic-catkin
+Description: Library and Utilities for working with ifm pmd-based 3D ToF Cameras
