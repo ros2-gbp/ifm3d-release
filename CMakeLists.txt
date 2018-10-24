@@ -101,7 +101,7 @@ if(BUILD_MODULE_TOOLS)
 endif()
 
 # Install catkin package.xml
-install(FILES package.xml DESTINATION share/ifm3d)
+install(FILES package.xml DESTINATION share/ifm3d-core)
 
 ################################################
 ## Sub-modules are done, finish up the cmake package
