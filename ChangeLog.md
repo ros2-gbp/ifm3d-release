@@ -1,3 +1,12 @@
+## Changes between ifm3d 0.11.1 and 0.11.2
+
+* Bugfix for #111, moved a log message in framegrabber to IFM3D_PROTO_DEBUG to
+  keep noise level low when running an O3X for extended periods of time.
+* Changed flagging bad pixels to always be `0` regardless of data type. Users
+  could always consult the confidence image themselves and discriminate between
+  a true `0` (not possible) and a bad pixel which they could then transform to
+  `nan` or whatever other sentinel makes sense for their application.
+
 ## Changes between ifm3d 0.11.0 and 0.11.1
 
 * Bugfix for #103 ``header is not in the correct format`` when ``make check`` is
