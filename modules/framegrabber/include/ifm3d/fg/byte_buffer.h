@@ -66,7 +66,9 @@ namespace ifm3d
     CONFIDENCE = 300,
     DIAGNOSTIC_DATA = 302,
     EXTRINSIC_CALIBRATION = 400,
-    INTRINSIC_CALIBRATION = 401
+    INTRINSIC_CALIBRATION = 401,
+    INVERSE_INTRINSIC_CALIBRATION = 402,
+    JSON_MODEL = 500,
   };
   // intrinsic param key which cahn be used for indexing the vector of the
   // intrinsic parameter
@@ -309,6 +311,12 @@ namespace ifm3d
     std::vector<float> Intrinsics();
 
     /**
+     *  Returns a 16-element vector containing the inverse intrinsic
+     *  calibration of the camera. See Intrinsics() for further information
+     */
+    std::vector<float> InverseIntrinsics();
+
+    /**
      * Returns a 3-element vector containing the exposure times (usec) for the
      * current frame. Unused exposure times are reported as 0.
      *
@@ -334,6 +342,17 @@ namespace ifm3d
      * need to make sure your current pcic schema asks for it.
      */
     float IlluTemp();
+
+    /**
+     * Returns the JSON model of the output of the active application
+     *
+     * NOTE: To get the JSON data for the application running on the device,
+     * you need to make sure your current pcic schema asks for it by including
+     * ifm3d::JSON_MODEL in the schema. This will return a blank JSON string
+     * ("{}") for Camera devices like the O3D303, versus ifm Smart Sensors like
+     * the O3D302.
+     */
+    std::string JSONModel();
 
     /**
      * This is the interface hook that synchronizes the internally wrapped byte
@@ -449,10 +468,14 @@ namespace ifm3d
     std::vector<float> extrinsics_;
 
     /**
-     * Intrinsic calibration WRT camera lense:
-     * parameter are stored in String in JSon parameter
+     * Intrinsic calibration WRT camera lense
      */
     std::vector<float> intrinsics_;
+
+    /**
+     * Inverse intrinsic calibration WRT camera lense:
+     */
+    std::vector<float> inverseIntrinsics_;
 
     /**
      * Exposure time(s) (up to 3), registered to the current frame.
@@ -470,11 +493,17 @@ namespace ifm3d
      */
     float illu_temp_;
 
+    /**
+     * JSON string of the active application output
+     */
+    std::string json_model_;
+
   private:
     /**
      * flag for checking if intrinsic values are already available
      */
     bool intrinsic_available;
+    bool inverse_intrinsic_available;
   }; // end: class ByteBuffer
 
 } // end: namespace ifm3d

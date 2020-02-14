@@ -104,13 +104,17 @@ const unsigned int ifm3d::O3D_INTRINSIC_PARAM_SUPPORT_MAJOR = 1;
 const unsigned int ifm3d::O3D_INTRINSIC_PARAM_SUPPORT_MINOR = 23;
 const unsigned int ifm3d::O3D_INTRINSIC_PARAM_SUPPORT_PATCH = 0;
 
+const unsigned int ifm3d::O3D_INVERSE_INTRINSIC_PARAM_SUPPORT_MAJOR = 1;
+const unsigned int ifm3d::O3D_INVERSE_INTRINSIC_PARAM_SUPPORT_MINOR = 30;
+const unsigned int ifm3d::O3D_INVERSE_INTRINSIC_PARAM_SUPPORT_PATCH = 4123;
+
 //================================================
 // A lookup table listing the read-only camera
 // parameters
 //================================================
 std::unordered_map<std::string,
                    std::unordered_map<std::string, bool> >
-RO_LUT =
+RO_LUT=
   {
     {"Device",
      {
@@ -168,11 +172,13 @@ RO_LUT =
 
     {"SpatialFilter",
      {
+       {}
      }
     },
 
     {"TemporalFilter",
      {
+      {}
      }
     }
   };

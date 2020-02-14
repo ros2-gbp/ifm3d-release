@@ -7,12 +7,15 @@ file(COPY ${IFM3D_TOOLS_SOURCE_DIR}/include
 if (NOT BUILD_MODULE_FRAMEGRABBER)
   file(REMOVE_RECURSE ${IFM3D_TOOLS_BINARY_DIR}/include/ifm3d/tools/fg)
 endif()
+if (NOT BUILD_MODULE_SWUPDATER)
+  file(REMOVE_RECURSE ${IFM3D_TOOLS_BINARY_DIR}/include/ifm3d/tools/swupdater)
+endif()
 
 ################################################
 ## Process child CMakeLists.txt files
 ################################################
 add_subdirectory(src)
-#add_subdirectory(contrib)
+add_subdirectory(contrib)
 
 ################################################
 ## Manage installation process
