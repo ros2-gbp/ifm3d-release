@@ -1,0 +1,12 @@
+Source: ros-kinetic-ifm3d-core
+Section: misc
+Priority: optional
+Maintainer: Christian Ege <christian.ege@ifm.com>
+Build-Depends: debhelper (>= 9.0.0), cmake, curl, libboost-all-dev, libcurl4-openssl-dev, libgoogle-glog-dev, libopencv-dev, libpcl-dev, libxmlrpc-c++8-dev
+Homepage: https://github.com/ifm/ifm3d
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-ifm3d-core
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, curl, libcurl4-openssl-dev, libgoogle-glog-dev, libopencv-dev, libpcl-dev, libxmlrpc-c++8-dev
+Description: Library and Utilities for working with ifm pmd-based 3D ToF Cameras
