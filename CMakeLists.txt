@@ -15,7 +15,7 @@ macro_ensure_out_of_source_build(
   "Please build ${PROJECT_NAME} out-of-source")
 
 # Conditionally turn on/off parts of the build (global-level)
-option(BUILD_TESTS "Build unit tests" OFF)
+option(BUILD_TESTS "Build unit tests" ON)
 option(BUILD_MODULE_FRAMEGRABBER "Build the framegrabber module" ON)
 option(BUILD_MODULE_IMAGE "Build the image module" ON)
 option(BUILD_MODULE_OPENCV "Build the OpenCV-only image container" OFF)
@@ -99,9 +99,6 @@ endif()
 if(BUILD_MODULE_TOOLS)
   add_subdirectory(modules/tools)
 endif()
-
-# Install catkin package.xml
-install(FILES package.xml DESTINATION share/ifm3d-core)
 
 ################################################
 ## Sub-modules are done, finish up the cmake package
