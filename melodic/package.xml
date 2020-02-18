@@ -1,5 +1,5 @@
 <package format="2">
-  <name>ifm3d-core</name>
+  <name>ifm3d_core</name>
   <version>:{version}</version>
   <description>
     Library and Utilities for working with ifm pmd-based 3D ToF Cameras
