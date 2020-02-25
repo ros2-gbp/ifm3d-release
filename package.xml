@@ -11,7 +11,7 @@
   <url type="repository">https://github.com/ifm/ifm3d</url>
   <url type="bugtracker">https://github.com/ifm/ifm3d/issues</url>
 
-  <author email="tom.panzarella@ifm.com">Tom Panzarella</author>
+  <author email="tom@boxrobotics.ai">Tom Panzarella</author>
 
   <!-- Dependencies which this package needs to build itself. -->
   <buildtool_depend>cmake</buildtool_depend>
