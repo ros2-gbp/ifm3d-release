@@ -1,3 +1,26 @@
+## ifm3d_core (melodic) - 0.17.0-6
+
+The packages in the `ifm3d_core` repository were released into the `melodic` distro by running `/usr/bin/bloom-release ifm3d_core --track melodic --rosdistro melodic` on `Tue, 25 Feb 2020 13:56:51 -0000`
+
+The `ifm3d_core` package was released.
+
+Version of package(s) in repository `ifm3d_core`:
+
+- upstream repository: https://github.com/ifm/ifm3d
+- release repository: https://github.com/ifm/ifm3d-release.git
+- rosdistro version: `0.17.0-5`
+- old version: `0.17.0-5`
+- new version: `0.17.0-6`
+
+Versions of tools used:
+
+- bloom version: `0.9.1`
+- catkin_pkg version: `0.4.16`
+- rosdep version: `0.18.0`
+- rosdistro version: `0.8.0`
+- vcstools version: `0.1.42`
+
+
 ## ifm3d_core (kinetic) - 0.17.0-10
 
 The packages in the `ifm3d_core` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release ifm3d_core --track kinetic --rosdistro kinetic --edit` on `Tue, 25 Feb 2020 13:52:07 -0000`
