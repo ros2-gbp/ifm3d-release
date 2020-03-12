@@ -202,4 +202,4 @@ include(CPack)
 #################################################
 # Install package.xml for catkin/ROS builds
 #################################################
-install(FILES package.xml DESTINATION share/ifm3d-core)
+install(FILES package.xml DESTINATION share/ifm3d_core)
