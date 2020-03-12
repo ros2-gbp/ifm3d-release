@@ -24,7 +24,7 @@ option(BUILD_MODULE_PCICCLIENT "Build the pcicclient module" OFF)
 option(BUILD_MODULE_TOOLS "Build the tools module" ON)
 option(BUILD_MODULE_PYBIND11 "Build the python bindings module" OFF)
 option(BUILD_SDK_PKG "Build install packages for development purposes" ON)
-option(FORCE_OPENCV3 "Force the build to require OpenCV 3" OFF)
+option(FORCE_OPENCV3 "Force the build to require OpenCV 3" ON)
 option(FORCE_OPENCV2 "Force the build to require OpenCV 2.4" OFF)
 option(BUILD_SHARED_LIBS "Build modules as shared libraries" ON)
 
