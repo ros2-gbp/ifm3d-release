@@ -15,7 +15,7 @@ macro_ensure_out_of_source_build(
   "Please build ${PROJECT_NAME} out-of-source")
 
 # Conditionally turn on/off parts of the build (global-level)
-option(BUILD_TESTS "Build unit tests" OFF)
+option(BUILD_TESTS "Build unit tests" ON)
 option(BUILD_MODULE_FRAMEGRABBER "Build the framegrabber module" ON)
 option(BUILD_MODULE_SWUPDATER "Build the swupdater module" ON)
 option(BUILD_MODULE_IMAGE "Build the image module" ON)
@@ -24,7 +24,7 @@ option(BUILD_MODULE_PCICCLIENT "Build the pcicclient module" OFF)
 option(BUILD_MODULE_TOOLS "Build the tools module" ON)
 option(BUILD_MODULE_PYBIND11 "Build the python bindings module" OFF)
 option(BUILD_SDK_PKG "Build install packages for development purposes" ON)
-option(FORCE_OPENCV3 "Force the build to require OpenCV 3" ON)
+option(FORCE_OPENCV3 "Force the build to require OpenCV 3" OFF)
 option(FORCE_OPENCV2 "Force the build to require OpenCV 2.4" OFF)
 option(BUILD_SHARED_LIBS "Build modules as shared libraries" ON)
 
@@ -198,8 +198,3 @@ add_custom_target(repackage
   )
 
 include(CPack)
-
-#################################################
-# Install package.xml for catkin/ROS builds
-#################################################
-install(FILES package.xml DESTINATION share/ifm3d_core)
