@@ -41,11 +41,11 @@ tracks:
     last_release: v0.17.0
     last_version: 0.17.0
     name: upstream
-    patches: dashing
+    patches: eloquent
     release_inc: '12'
     release_repo_url: null
     release_tag: v:{version}
-    ros_distro: dashing
+    ros_distro: eloquent
     vcs_type: git
     vcs_uri: https://github.com/ifm/ifm3d
     version: :{ask}
