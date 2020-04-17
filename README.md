@@ -1,3 +1,26 @@
+## ifm3d_core (eloquent) - 0.17.0-15
+
+The packages in the `ifm3d_core` repository were released into the `eloquent` distro by running `/usr/bin/bloom-release --rosdistro eloquent --track eloquent ifm3d_core` on `Fri, 17 Apr 2020 16:42:32 -0000`
+
+The `ifm3d_core` package was released.
+
+Version of package(s) in repository `ifm3d_core`:
+
+- upstream repository: https://github.com/ifm/ifm3d
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `0.17.0-14`
+- new version: `0.17.0-15`
+
+Versions of tools used:
+
+- bloom version: `0.9.3`
+- catkin_pkg version: `0.4.16`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.0`
+- vcstools version: `0.1.42`
+
+
 ## ifm3d_core (dashing) - 0.17.0-12
 
 The packages in the `ifm3d_core` repository were released into the `dashing` distro by running `/usr/bin/bloom-release --rosdistro dashing --track dashing ifm3d_core` on `Fri, 17 Apr 2020 15:38:43 -0000`
