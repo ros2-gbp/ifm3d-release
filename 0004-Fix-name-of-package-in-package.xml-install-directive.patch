@@ -1,4 +1,4 @@
-From 5a6dc39f38e91c72547731b388229e015546fdd4 Mon Sep 17 00:00:00 2001
+From 49427a32ba7ff66c61ae09b5f59c6175c9ad70fe Mon Sep 17 00:00:00 2001
 From: Sean Kelly <Sean.Kelly@ifm.com>
 Date: Thu, 12 Mar 2020 16:33:30 -0400
 Subject: [PATCH 4/4] Fix name of package in package.xml install directive
