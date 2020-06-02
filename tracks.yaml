@@ -38,11 +38,11 @@ tracks:
     - git-bloom-generate -y rosrpm --prefix release/:{ros_distro} :{ros_distro} -i
       :{release_inc}
     devel_branch: null
-    last_release: v0.17.0
-    last_version: 0.17.0
+    last_release: v0.18.0
+    last_version: 0.18.0
     name: upstream
     patches: eloquent
-    release_inc: '15'
+    release_inc: '1'
     release_repo_url: null
     release_tag: v:{version}
     ros_distro: eloquent
