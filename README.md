@@ -1,3 +1,26 @@
+## ifm3d_core (noetic) - 0.18.0-5
+
+The packages in the `ifm3d_core` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic ifm3d_core` on `Tue, 02 Jun 2020 19:00:10 -0000`
+
+The `ifm3d_core` package was released.
+
+Version of package(s) in repository `ifm3d_core`:
+
+- upstream repository: https://github.com/ifm/ifm3d
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `0.18.0-4`
+- new version: `0.18.0-5`
+
+Versions of tools used:
+
+- bloom version: `0.9.7`
+- catkin_pkg version: `0.4.20`
+- rosdep version: `0.19.0`
+- rosdistro version: `0.8.2`
+- vcstools version: `0.1.42`
+
+
 ## ifm3d_core (noetic) - 0.18.0-4
 
 The packages in the `ifm3d_core` repository were released into the `noetic` distro by running `/usr/bin/bloom-release -r noetic ifm3d_core` on `Tue, 02 Jun 2020 18:56:41 -0000`
