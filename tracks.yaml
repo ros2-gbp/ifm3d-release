@@ -116,11 +116,11 @@ tracks:
     last_release: v0.17.0
     last_version: 0.17.0
     name: upstream
-    patches: melodic
+    patches: noetic
     release_inc: '9'
     release_repo_url: null
     release_tag: v:{version}
-    ros_distro: melodic
+    ros_distro: noetic
     vcs_type: git
     vcs_uri: https://github.com/ifm/ifm3d
     version: :{ask}
