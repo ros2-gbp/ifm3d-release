@@ -15,7 +15,7 @@ endif()
 ## Process child CMakeLists.txt files
 ################################################
 add_subdirectory(src)
-#add_subdirectory(contrib)
+add_subdirectory(contrib)
 
 ################################################
 ## Manage installation process
