@@ -1,0 +1,25 @@
+From 0b0cb67ed3c54ede47abcd95860a72d76fd86461 Mon Sep 17 00:00:00 2001
+From: Sean Kelly <Sean.Kelly@ifm.com>
+Date: Fri, 14 Feb 2020 14:59:04 -0500
+Subject: [PATCH 3/4] Enable SDK build
+
+---
+ CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 17b4f08..b6529bf 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -23,7 +23,7 @@ option(BUILD_MODULE_OPENCV "Build the OpenCV-only image container" OFF)
+ option(BUILD_MODULE_PCICCLIENT "Build the pcicclient module" OFF)
+ option(BUILD_MODULE_TOOLS "Build the tools module" ON)
+ option(BUILD_MODULE_PYBIND11 "Build the python bindings module" OFF)
+-option(BUILD_SDK_PKG "Build install packages for development purposes" OFF)
++option(BUILD_SDK_PKG "Build install packages for development purposes" ON)
+ option(FORCE_OPENCV3 "Force the build to require OpenCV 3" OFF)
+ option(FORCE_OPENCV2 "Force the build to require OpenCV 2.4" OFF)
+ option(BUILD_SHARED_LIBS "Build modules as shared libraries" ON)
+-- 
+2.25.1
+

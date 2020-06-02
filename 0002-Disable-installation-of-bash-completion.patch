@@ -1,0 +1,26 @@
+From b618a9332a791f20cab82dd03926cfc923dfd148 Mon Sep 17 00:00:00 2001
+From: Sean Kelly <Sean.Kelly@ifm.com>
+Date: Fri, 14 Feb 2020 14:05:24 -0500
+Subject: [PATCH 2/4] Disable installation of bash completion
+
+This breaks in catkin install_isolated
+---
+ modules/tools/CMakeLists.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/modules/tools/CMakeLists.txt b/modules/tools/CMakeLists.txt
+index e9b2a88..2080153 100644
+--- a/modules/tools/CMakeLists.txt
++++ b/modules/tools/CMakeLists.txt
+@@ -15,7 +15,7 @@ endif()
+ ## Process child CMakeLists.txt files
+ ################################################
+ add_subdirectory(src)
+-add_subdirectory(contrib)
++#add_subdirectory(contrib)
+ 
+ ################################################
+ ## Manage installation process
+-- 
+2.25.1
+
