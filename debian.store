@@ -1,1 +1,1 @@
-{"base": "069f555", "parent": "debian/foxy/ifm3d_core", "previous": "23ceef4", "trim": "", "trimbase": ""}
+{"base": "f496283", "parent": "debian/rolling/ifm3d_core", "previous": "6df1dd6", "trim": "", "trimbase": ""}
