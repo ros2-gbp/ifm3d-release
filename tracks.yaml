@@ -202,5 +202,4 @@ tracks:
     ros_distro: rolling
     vcs_type: git
     vcs_uri: https://github.com/ifm/ifm3d
-    version: 0.18.0
-    version_saved: :{ask}
+    version: :{ask}
