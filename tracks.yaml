@@ -121,7 +121,7 @@ tracks:
     last_version: 0.18.0
     name: upstream
     patches: foxy
-    release_inc: '6'
+    release_inc: '7'
     release_repo_url: null
     release_tag: v:{version}
     ros_distro: humble
